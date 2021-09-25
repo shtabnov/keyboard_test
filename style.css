@@ -1,0 +1,20 @@
+.keybox {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.keybox__funcblock {
+    display: flex;
+    flex-direction: row;
+}
+.keybox__funcblock__key {
+    margin: 0 3px;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+
+}
