@@ -1,4 +1,6 @@
 .keybox {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
     position: relative;
     width: 1350px;
     display: grid;
