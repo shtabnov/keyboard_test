@@ -1,35 +1,63 @@
 .keybox {
-    position: absolute;
-    width: auto;
-    top: 30%;
-    left: 20%;
-    transform: translate(-20%, -30%);
+    position: relative;
+    width: 1350px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    "keybox__block__func keybox__block__break keybox__block__null"
+    "keybox__block__main keybox__block__add keybox__block__num"
 }
-.keybox__funcblock,
-.keybox__mainblock {
-    width: 980px;  
+
+.keybox__block {
+    position: relative;
+    display: inline-block;
+    width: 934px;  
 }
-.keybox__mainblock__key,
-.keybox__funcblock__key {
+.keybox__block_break {
+    grid-area: keybox__block__break;
+}
+.keybox__block_null {
+    grid-area: keybox__block__null;
+}
+.keybox__block_add {
+    grid-area: keybox__block__add;
+}
+.keybox__block_num {
+    grid-area: keybox__block__num;
+}
+.keybox__block--mini {
+    width: 195px;
+}
+
+.keybox__key {
     position: relative;
     display: inline-block;
     margin: 3px 2px;
-    padding: 5px;
+    padding: 10px 0 0 10px;;
     width: 45px;
     height: 45px;
     border: 0.5px solid black;
     border-radius: 5px;
+    box-shadow: 0 0 3px 1px deeppink;
 }
-.keybox__funcblock__key--null {
+.keybox__key--null {
     visibility: hidden;
+}
+.keybox__key--small {
     width: 10px;
 }
-.keybox__mainblock__key--large {
+.keybox__key--large {
     width: 70px;
 }
-.keybox__mainblock__key--verylarge {
+.keybox__key--verylarge {
     width: 90px;
 }
-.keybox__mainblock__key--shift {
+.keybox__key--shift {
     width: 122px;
+}
+.keybox__key--littlelarge {
+    width: 65px;
+}
+.keybox__key--overlarge {
+    width: 404px;
 }
