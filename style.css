@@ -1,3 +1,4 @@
+body {background: rgb(238, 238, 238);}
 .keybox {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -29,6 +30,9 @@
 }
 .keybox__block--mini {
     width: 195px;
+}
+.keybox__block--midi {
+    width: 255px;
 }
 
 .keybox__key {
@@ -62,4 +66,11 @@
 }
 .keybox__key--overlarge {
     width: 404px;
+}
+.keybox__key--numhor {
+    width: 109px;
+}
+.keybox__key--numver {
+    float: right;
+    height: 108px;    
 }
